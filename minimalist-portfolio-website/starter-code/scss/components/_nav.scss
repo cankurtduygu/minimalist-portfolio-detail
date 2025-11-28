@@ -5,12 +5,12 @@
 .nav {
     @extend .flexdiv;
     @include mixins.flexdirection(30px,normal,space-between);
+
+    margin-block-start: 4rem; //64px
+    margin-inline: 10.25rem; //164px
     
 
     border: 2px solid red;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     padding: 0.5rem;
     padding-block: 1rem;
 

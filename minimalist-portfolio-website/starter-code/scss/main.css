@@ -22,6 +22,8 @@ h1 {
   flex-direction: normal;
   justify-content: space-between;
   gap: 30px;
+  margin-block-start: 4rem;
+  margin-inline: 10.25rem;
   border: 2px solid red;
   padding: 0.5rem;
   padding-block: 1rem;
@@ -54,18 +56,29 @@ h1 {
   color: #5FB4A2;
 }
 
+.hero {
+  padding-inline: 10.25rem;
+  padding-block-start: 3.375rem;
+  background-color: pink;
+}
+.hero__container {
+  position: relative;
+}
 .hero__sub {
+  position: absolute;
+  background-color: aqua;
   bottom: 0;
   left: 0;
   transform: translateY(50%);
   z-index: 10;
-  background: white;
   width: 445px;
   height: 357px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero__sub h1 {
-  padding-block: 54px;
-  padding-inline-end: 55px;
+  padding: 55px 55px 0px 0px;
 }
 .hero__info {
   width: 200px;
