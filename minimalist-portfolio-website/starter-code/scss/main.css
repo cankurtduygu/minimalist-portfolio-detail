@@ -1,0 +1,99 @@
+.flexdiv, .hero__info, .nav {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0281rem;
+  color: #33323D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  flex-direction: normal;
+  justify-content: space-between;
+  gap: 30px;
+  border: 2px solid red;
+  padding: 0.5rem;
+  padding-block: 1rem;
+}
+.nav .header-img {
+  max-width: 3.75rem;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.nav__list {
+  list-style-type: none;
+}
+.nav__item {
+  display: inline;
+  padding: 0.25rem;
+  height: 100%;
+  cursor: pointer;
+}
+.nav__link {
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+.nav .link2 {
+  color: #5FB4A2;
+}
+
+.hero__sub {
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  z-index: 10;
+  background: white;
+  width: 445px;
+  height: 357px;
+}
+.hero__sub h1 {
+  padding-block: 54px;
+  padding-inline-end: 55px;
+}
+.hero__info {
+  width: 200px;
+  background-color: #203A4C;
+}
+.hero__info img {
+  padding: 20px;
+  background-color: #33323D;
+}
+.hero__info p {
+  margin: auto;
+  color: #FAFAFA;
+  padding: 18px;
+}
+
+@media (min-width: 769px) {
+  .hero__sub {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+  }
+}
+@media (max-width: 768px) {
+  .hero__sub {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */

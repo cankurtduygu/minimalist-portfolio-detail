@@ -1,0 +1,49 @@
+@use "../abstract/mixins";
+@use "../base/base";
+@use "../abstract/variables" as vars;
+
+.nav {
+    @extend .flexdiv;
+    @include mixins.flexdirection(30px,normal,space-between);
+    
+
+    border: 2px solid red;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 0.5rem;
+    padding-block: 1rem;
+
+    .header-img {
+        max-width: 3.75rem;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        display: inline;
+        padding: 0.25rem;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: vars.$font-body;
+        font-weight: vars.$h3-font-weight;
+        font-size: vars.$header-font-size;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+    .link2 {
+        color: vars.$primary-cyan;
+    }
+}

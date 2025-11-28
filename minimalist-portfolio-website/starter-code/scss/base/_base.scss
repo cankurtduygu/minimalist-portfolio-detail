@@ -1,0 +1,20 @@
+@import "../abstract/variables";
+.flexdiv{
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+  font-family: $font-heading;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0281rem;
+  color: $primary-grayish-dark-blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

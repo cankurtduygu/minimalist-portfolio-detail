@@ -1,0 +1,17 @@
+@use "./base/base";
+// 1. Abstract (değişkenler, mixinler)
+@use "./abstract/variables";
+@use "./abstract/mixins";
+
+// 3. Components (navbar, footer, küçük UI parçaları)
+@use "./components/footer";
+@use "./components/nav";
+@use "./components/responsive";
+
+
+// 4. Pages (sayfa sayfa stiller)
+@use "./pages/contact";
+@use "./pages/home";
+@use "./pages/portfolio";
+
+
