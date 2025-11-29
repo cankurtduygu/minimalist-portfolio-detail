@@ -13,67 +13,36 @@
 
 <body>
   <!--! header bolumu  -->
-  <nav class="nav">
-    <div class="header-img">
-      <img src="./images/logo.svg" alt="logo" />
-    </div>
-    <div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="home.html" class="nav__link nav__link--active">HOME</a>
-        </li>
-        <li class="nav__item">
-          <a href="portfolio.html" class="nav__link link2">PORTFOLIO</a>
-        </li>
-        <li class="nav__item">
-          <a href="contact.html" class="nav__link">CONTACT ME</a>
-        </li>
-      </ul>
-    </div>
-
+    <nav class="navbar">
+    <img src="./images/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home">HOME</a></li>
+      <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
   </nav>
 
- <header class="hero">
-    <div class="hero__container">
-        <!-- <img src="./images/homepage/desktop/image-homepage-hero.jpg" alt="" width="100%"> -->
+  <!-- HERO  -->
 
-        <picture>
-  <!-- Desktop -->
-  <source 
-    media="(min-width: 991px)"
-    srcset="
-      ./images/homepage/desktop/image-homepage-hero@2x.jpg 2x,
-      ./images/homepage/desktop/image-homepage-hero.jpg 1x
-    "
-  />
-
-  <!-- Tablet -->
-  <source 
-    media="(min-width: 600px)"
-    srcset="
-      ./images/homepage/tablet/image-homepage-hero@2x.jpg 2x,
-      ./images/homepage/tablet/image-homepage-hero.jpg 1x
-    "
-  />
-
-  <!-- Mobile (default) -->
-  <img 
-    src="./images/homepage/mobile/image-homepage-hero.jpg"
-    srcset="./images/homepage/mobile/image-homepage-hero@2x.jpg 2x"
-    alt="Homepage hero image"
-  />
-</picture>
-
-
-        <div class="hero__sub">
-            <h1>Hey, I'm Alex Spencer and I love building beautiful websites</h1>
-            <div class="hero__info">
-                <img src="./images/icons/down-arrows.svg" alt="">
-                <p>ABOUT ME</p>
-            </div>
-        </div>
+  <header class="hero">
+    <picture class="hero__picture">
+      <source media="(min-width: 64rem)" srcset="images\homepage\desktop\image-homepage-hero@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images\homepage\tablet\image-homepage-hero@2x.jpg">
+      <img class="hero__img" src="images/homepage/mobile/image-homepage-hero@2x.jpg" alt="">
+    </picture>
+    <div class="hero__text">
+      <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h2>
+      <button class="hero__btn">
+        <img src="images/icons/down-arrows.svg" alt="">
+        <p class="p-2">ABOUT ME</p>
+      </button>
     </div>
-</header>
+  </header>
+
+
+
+  <!-- 
 </body>
 
 </html>

@@ -1,20 +1,17 @@
-@import "../abstract/variables";
-.flexdiv{
+body {
+    min-height: 100vh;
+    padding-inline: 2rem;
+    padding-block-start: 2rem;
+}
+
+
+.flex {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-h1 {
-  font-family: $font-heading;
-  font-size: 3.125rem;
-  line-height: 3.125rem;
-  font-weight: 700;
-  letter-spacing: -0.0281rem;
-  color: $primary-grayish-dark-blue;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+nav, header, main, .contact, footer {
+    min-width: 19.4375rem;
+    max-width: 90rem;
 }
