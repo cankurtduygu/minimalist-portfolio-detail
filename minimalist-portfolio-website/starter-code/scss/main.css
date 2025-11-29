@@ -22,11 +22,10 @@ h1 {
   flex-direction: normal;
   justify-content: space-between;
   gap: 30px;
-  margin-block-start: 4rem;
-  margin-inline: 10.25rem;
+  background-color: red;
+  padding-block-start: 4rem;
+  padding-inline: 10.25rem;
   border: 2px solid red;
-  padding: 0.5rem;
-  padding-block: 1rem;
 }
 .nav .header-img {
   max-width: 3.75rem;
@@ -56,6 +55,16 @@ h1 {
   color: #5FB4A2;
 }
 
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .nav {
+    padding-inline: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding-inline: 2rem;
+  }
+}
 .hero {
   padding-inline: 10.25rem;
   padding-block-start: 3.375rem;
@@ -66,47 +75,56 @@ h1 {
 }
 .hero__sub {
   position: absolute;
-  background-color: aqua;
+  background-color: white;
   bottom: 0;
   left: 0;
-  transform: translateY(50%);
   z-index: 10;
   width: 445px;
-  height: 357px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .hero__sub h1 {
-  padding: 55px 55px 0px 0px;
+  padding: 55px 55px 53px 0px;
 }
 .hero__info {
   width: 200px;
+  height: 48px;
   background-color: #203A4C;
 }
 .hero__info img {
-  padding: 20px;
+  padding: 17px;
   background-color: #33323D;
 }
 .hero__info p {
-  margin: auto;
   color: #FAFAFA;
   padding: 18px;
 }
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .hero {
+    padding-inline: 2.5rem;
+    padding-block-start: 2.9375rem;
+  }
   .hero__sub {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(50%);
+    background-color: white;
+    width: 514px;
+  }
+  .hero__sub h1 {
+    padding: 55px 55px 96px 0;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-inline: 2rem;
+    padding-block-start: 2.5rem;
+  }
   .hero__sub {
     position: static;
     transform: none;
-    width: 100%;
+    width: 458px;
+    height: 126px;
     margin-top: 40px;
+    padding: 40px 20px;
+  }
+  .hero__sub h1 {
+    padding: 24px 32px 32px 0px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -35,7 +35,36 @@
 
  <header class="hero">
     <div class="hero__container">
-        <img src="./images/homepage/desktop/image-homepage-hero.jpg" alt="" width="100%">
+        <!-- <img src="./images/homepage/desktop/image-homepage-hero.jpg" alt="" width="100%"> -->
+
+        <picture>
+  <!-- Desktop -->
+  <source 
+    media="(min-width: 991px)"
+    srcset="
+      ./images/homepage/desktop/image-homepage-hero@2x.jpg 2x,
+      ./images/homepage/desktop/image-homepage-hero.jpg 1x
+    "
+  />
+
+  <!-- Tablet -->
+  <source 
+    media="(min-width: 600px)"
+    srcset="
+      ./images/homepage/tablet/image-homepage-hero@2x.jpg 2x,
+      ./images/homepage/tablet/image-homepage-hero.jpg 1x
+    "
+  />
+
+  <!-- Mobile (default) -->
+  <img 
+    src="./images/homepage/mobile/image-homepage-hero.jpg"
+    srcset="./images/homepage/mobile/image-homepage-hero@2x.jpg 2x"
+    alt="Homepage hero image"
+  />
+</picture>
+
+
         <div class="hero__sub">
             <h1>Hey, I'm Alex Spencer and I love building beautiful websites</h1>
             <div class="hero__info">

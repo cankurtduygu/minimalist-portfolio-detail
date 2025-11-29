@@ -9,25 +9,27 @@
 
     &__container {
         position: relative;
+//         background-image: url("/minimalist-portfolio-website/starter-code/images/homepage/desktop/image-homepage-hero@2x.jpg");
+//     background-size: cover;
+//   background-position: center;
+//    height: 600px;
     }
 
     &__sub {
         position: absolute;
-        background-color: aqua;
+        background-color: white;
         bottom: 0;
         left: 0;
-        transform: translateY(50%);
         z-index: 10;
 
         width: 445px;
-        height: 357px;
+        // height: 357px;
         
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
         h1 {
-            padding: 55px 55px 0px 0px;
+            padding:55px 55px 53px 0px;
         }
 
     }
@@ -35,37 +37,69 @@
     &__info {
         @extend .flexdiv;
         width: 200px;
+        height: 48px;
         background-color: $primary-dark-blue;
 
         img {
-            padding: 20px;
+            padding: 17px;
             background-color: $primary-grayish-dark-blue;
         }
 
         p {
-            margin: auto;
             color: $secondary-very-light-grey;
             padding: 18px;
         }
     }
 }
 
-// Desktop
-@media (min-width: 769px) {
-    .hero__sub {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translateY(50%);
+// Tablet (601px - 991px)
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .hero {
+        padding-inline: 2.5rem;//40px
+        padding-block-start: 2.9375rem; //47px
+
+    
+
+        &__sub {
+
+        background-color: white;
+    
+        width: 514px;
+        // height: 278px;
+
+        h1 {
+            padding:55px 55px 96px 0;
+        }
+
     }
+
+
+    }
+
+    
+
+  
+    
 }
 
-// Tablet ve Mobile
-@media (max-width: 768px) {
+
+// Mobile (600px ve altı)
+@media only screen and (max-width: 600px) {
+    .hero {
+        padding-inline: 2rem;//40px
+        padding-block-start: 2.5rem;//40px
+    }
+
     .hero__sub {
         position: static;
         transform: none;
-        width: 100%;
+        width: 458px;
+        height: 126px;
         margin-top: 40px;
+        padding: 40px 20px;
+
+         h1 {
+            padding: 24px 32px 32px 0px;
+        }
     }
 }
