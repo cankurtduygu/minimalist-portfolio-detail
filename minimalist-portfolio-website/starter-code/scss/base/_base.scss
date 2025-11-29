@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    padding-inline: 2rem;
+    padding-inline: 2rem;//32px
     padding-block-start: 2rem;
 }
 
@@ -12,6 +12,6 @@ body {
 }
 
 nav, header, main, .contact, footer {
-    min-width: 19.4375rem;
-    max-width: 90rem;
+    min-width: 19.4375rem;//311px
+    max-width: 90rem;//1440px
 }

@@ -1,5 +1,5 @@
 //abstract
-@use "./abstract/mixins";
+@use "./abstract/mixins" as mixins;
 @use "./abstract/variables";
 
 //base
@@ -12,7 +12,6 @@
 @use "./components/contact" as components_contact;
 @use "./components/footer";
 @use "./components/navbar";
-@use "./components/responsive";
 
 
 //pages
@@ -24,6 +23,9 @@
 @use "./pages/insure";
 @use "./pages/manage";
 @use "./pages/portfolio";
+
+// Load responsive utilities LAST so they can override page-level defaults
+@use "./components/responsive";
 
 
 @import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:regular,500,600,700,italic,500italic,600italic,700italic);

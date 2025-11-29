@@ -1,5 +1,6 @@
 @use "../abstract/variables" as vars;
 @use "../base/base" as base;
+@use "../abstract/mixins" as mixins;
 
 
 .hero {
@@ -35,4 +36,31 @@
 
 
 
+}
+
+.about-me{
+    @extend .flex;
+    @include mixins.flexdirection(column, space-between, 2rem);
+
+   
+
+    &__text {
+        border-top: 1px solid vars.$color-text-field;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        
+
+        .p{
+            
+            margin-top: 28px;
+            margin-bottom: 24px;  
+        }
+    }
+
+    &__btn {
+        padding-block: 10px;
+        padding-inline: 34px;
+        background-color: vars.$color-background;
+        border:1px solid vars.$color-primary-grayish-dark-blue;
+    }
 }

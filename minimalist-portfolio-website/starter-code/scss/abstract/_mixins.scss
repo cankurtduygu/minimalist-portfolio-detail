@@ -1,5 +1,7 @@
-@mixin flexdirection($gap, $direction:row, $justify:center){
+@mixin flexdirection($direction:row, $justify:center, $gap){
     flex-direction:$direction;
     justify-content: $justify;
     gap: $gap;
 }
+
+
