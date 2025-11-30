@@ -55,12 +55,19 @@
     .about-me {
         display: flex;
         @include mixins.flexdirection(row, space-between, 4rem);
-        align-items: flex-start;
+      
+        &__picture{
+            object-fit: cover;
+            width: 281px;
+            height: 100%;
+        }
 
-
-
+        &__text{
+            width:340px;
+            padding-top: 50px;
+            padding-bottom: 47px;
+        }
     }
-
 
 }
 
@@ -77,4 +84,29 @@
         max-width: 27.8125rem;
     }
 
+    // ABOUT ME
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 1.75fr 1.25fr;
+        gap: 7.8125rem;
+
+        padding-right: 95px;
+        
+      
+        &__picture{
+            width: 540px;
+            height: 100%;
+         
+        }
+
+        &__text{
+            padding-top: 50px;
+            padding-bottom: 47px;
+        }
+
+    }
+
 }
+
+ 

@@ -39,19 +39,20 @@
 }
 
 .about-me{
-    @extend .flex;
-    @include mixins.flexdirection(column, space-between, 2rem);
+    // @extend .flex;
+    // @include mixins.flexdirection(column, space-between, 2rem);
 
    
 
     &__text {
+        margin-top: 2rem;
         border-top: 1px solid vars.$color-text-field;
+        border-bottom: 1px solid vars.$color-text-field;
         padding-top: 32px;
         padding-bottom: 40px;
         
 
         .p{
-            
             margin-top: 28px;
             margin-bottom: 24px;  
         }
