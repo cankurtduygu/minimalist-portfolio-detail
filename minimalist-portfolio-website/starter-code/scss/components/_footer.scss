@@ -1,0 +1,46 @@
+@use "../abstract/variables" as vars;
+@use "../base/base" as base;
+@use "../abstract/mixins" as mixins;
+
+.footer{
+    display: flex;
+    @include mixins.flexdirection(column, center, 2rem);
+    align-items: center;
+    padding: 3.5rem 8.5rem;
+    background-color: vars.$color-primary-grayish-dark-blue;
+    width: 100%;
+
+    
+
+    &__pages{
+        display: flex;
+        @include mixins.flexdirection(column, center, 2rem);
+        align-items: center;
+
+        img{
+            filter: brightness(0) invert(1);
+        }
+
+        .list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;  
+
+            li a{
+                color:white;      
+                  }
+        }
+        
+    }
+
+    &__social-media{
+        @extend .flex;
+        gap: 1rem;
+        img{
+            cursor: pointer;
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    }

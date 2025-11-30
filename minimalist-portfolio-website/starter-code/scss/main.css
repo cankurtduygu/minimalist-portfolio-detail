@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -98,19 +99,23 @@ ul {
 
 body {
   min-height: 100vh;
-  padding-inline: 2rem;
   padding-block-start: 2rem;
 }
 
-.flex, .hero__btn, .contact-me, .navbar, .navbar ul {
+.flex, .hero__btn, .contact-me, .navbar, .navbar ul, .footer__social-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav, header, main, .contact, footer {
+nav, header, main, .contact, section {
   min-width: 19.4375rem;
   max-width: 90rem;
+  padding-inline: 32px;
+}
+
+footer {
+  width: 100vw;
 }
 
 .btn, .about-me__text a, .contact-me a {
@@ -122,6 +127,43 @@ nav, header, main, .contact, footer {
   padding: 0.625rem 2rem;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 3.5rem 8.5rem;
+  background-color: #33323D;
+  width: 100%;
+}
+.footer__pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.footer__pages img {
+  filter: brightness(0) invert(1);
+}
+.footer__pages .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__pages .list li a {
+  color: white;
+}
+.footer__social-media {
+  gap: 1rem;
+}
+.footer__social-media img {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
 }
 
 .navbar ul {
