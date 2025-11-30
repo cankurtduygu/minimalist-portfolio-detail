@@ -1,4 +1,4 @@
-// @use "../abstract/variables" as vars;
+@use "../abstract/variables" as vars;
 //@use "../base/base" as base;
 @use "../abstract/mixins"as mixins;
 
@@ -69,7 +69,31 @@
         }
     }
 
+    // CONTACT ME
+    .contact-me {
+        display: flex;
+        @include mixins.flexdirection(row, space-between, 2rem);
+        align-items: center;
+
+        &__line{
+            display: block;
+            border: 1px solid vars.$color-text-field;
+            min-width: 20%;
+        }
+
+        h2{
+            max-width: 21.875rem;//350px
+        }
+
+        // a {
+        //     flex-shrink: 0; // Butonu küçülmekten korur
+        // }
+    }
+
+
+
 }
+
 
 
 @media (min-width:64rem) {
@@ -109,4 +133,3 @@
 
 }
 
- 

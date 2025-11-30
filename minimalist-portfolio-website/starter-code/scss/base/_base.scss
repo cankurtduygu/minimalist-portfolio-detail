@@ -1,3 +1,4 @@
+@use "../abstract/variables" as vars;
 body {
     min-height: 100vh;
     padding-inline: 2rem;//32px
@@ -14,4 +15,14 @@ body {
 nav, header, main, .contact, footer {
     min-width: 19.4375rem;//311px
     max-width: 90rem;//1440px
+}
+
+.btn{
+    color: vars.$color-primary-grayish-dark-blue;
+    background-color: vars.$color-background;
+    border:1px solid vars.$color-primary-grayish-dark-blue;
+    letter-spacing: 0.125rem; //2px
+    font-size: .75rem;
+    padding: .625rem 2rem;
+    width: fit-content;
 }
