@@ -108,7 +108,7 @@ body {
   align-items: center;
 }
 
-nav, header, main, .contact, section {
+nav, header, main, .contact, section, article {
   min-width: 19.4375rem;
   max-width: 90rem;
   padding-inline: 32px;
@@ -305,4 +305,19 @@ footer {
     padding-top: 50px;
     padding-bottom: 47px;
   }
+}
+.portfolio__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.portfolio__card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-block: 1px solid #EAEAEB;
+  padding-block: 1.5rem;
+  margin-block-end: 4.5rem;
 }/*# sourceMappingURL=main.css.map */
