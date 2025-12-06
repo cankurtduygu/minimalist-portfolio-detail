@@ -1,70 +1,10 @@
 @mixin flexdirection($direction:row, $justify:center, $gap){
     flex-direction:$direction;
-    justify-content: $justify;
+    justify-content: $gap;
     gap: $gap;
 }
 
-// @mixin portfolio-layout($direction: column, $card-direction: column, $gap: 5rem, $card-gap: 2rem, $align: stretch) {
-  
-//   .portfolio__grid {
-//     display: flex;
-//     flex-direction: $direction;
-//     gap: $gap;
-//   }
-  
-//   .portfolio__card {
-//     display: flex;
-//     flex-direction: $card-direction;
-//     gap: $card-gap;
-//     align-items: $align;
-    
-//     &-image {
-//       width: 100%;
-//       flex: 1;
-//     }
-    
-//     &-content {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 1.5rem;
-//       flex: 1;
-//     }
-//   }
-// }
 
 
-@mixin portfolio-layout(
-    $card-direction: column, 
-    $card-gap: 2rem,
-    $content-direction: column, 
-
-    $content-gap: 2rem, 
-    $align: flex-start,
-    $content-margin-bottom: 4.5rem,
-    $border-column-color: black
-    )
-    
-    {
-    display:flex;
-    flex-direction: $card-direction;//column
-    gap: $card-gap; //2rem
-
-    &--content{
-        display: flex;
-        flex-direction: $content-direction; //column
-        justify-content: center;
-        align-items: flex-start;
-       
-        gap: $content-gap; //1.5rem
-
-        border-block: 1px solid $border-column-color;
-        padding-block: 1.5rem;
-        margin-block-end: $content-margin-bottom; 
-        
-    }
-
-
-
-}
 
 

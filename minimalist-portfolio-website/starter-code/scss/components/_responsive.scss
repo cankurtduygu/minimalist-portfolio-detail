@@ -1,4 +1,4 @@
-@use "../abstract/variables" as vars;
+@use "../abstract/variables"as vars;
 //@use "../base/base" as base;
 @use "../abstract/mixins"as mixins;
 
@@ -55,15 +55,15 @@
     .about-me {
         display: flex;
         @include mixins.flexdirection(row, space-between, 4rem);
-      
-        &__picture{
+
+        &__picture {
             object-fit: cover;
             width: 281px;
             height: 100%;
         }
 
-        &__text{
-            width:340px;
+        &__text {
+            width: 340px;
             padding-top: 50px;
             padding-bottom: 47px;
         }
@@ -75,21 +75,50 @@
         @include mixins.flexdirection(row, space-between, 2rem);
         align-items: center;
 
-        &__line{
+        &__line {
             display: block;
             border: 1px solid vars.$color-text-field;
             min-width: 20%;
         }
 
-        h2{
-            max-width: 21.875rem;//350px
+        h2 {
+            max-width: 21.875rem; //350px
         }
 
         // a {
         //     flex-shrink: 0; // Butonu küçülmekten korur
         // }
     }
+
+    // PORTFOLIO PAGE 
+    .portfolio__card {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 4.3125rem !important;
+        align-items: flex-start; // Üstten hizala
+        justify-content: space-between;
+        margin-block-start: 5rem;
+
+        &--picture,
+        &--content {
+            flex: 1; // Eşit genişlik
+            min-width: 0; // Flex overflow fix
+        }
+
+        &--content {
+            margin-block-end: 0;
+        }
+
+        // Tekler - Ters sıra
+        &:nth-child(odd) {
+            flex-direction: row-reverse !important;
+        }
+    }
+
 }
+
+
+
 
 
 
@@ -113,20 +142,59 @@
         gap: 7.8125rem;
 
         padding-right: 95px;
-        
-      
-        &__picture{
+
+
+        &__picture {
             width: 540px;
             height: 100%;
-         
+
         }
 
-        &__text{
+        &__text {
             padding-top: 50px;
             padding-bottom: 47px;
         }
 
     }
 
-}
+     // PORTFOLIO PAGE 
+    .portfolio__card {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 7.8125rem !important;
+        justify-content: space-between;
+        margin-block-start: 5rem !important;
+        min-height: 500px;
 
+        &--picture,
+        &--content {
+            flex: 1; // Eşit genişlik
+            min-width: 0; // Flex overflow fix
+        }
+
+        &--content {
+            padding-block: 3rem !important; // Üst ve alt boşluk
+            justify-content: center !important; // İçeriği dikeyde ortala
+
+            a{
+                margin-block-end: 120px;
+            }
+
+        
+        }
+
+        .portfolio__card--title{
+            margin-block-start: 103px;
+        }
+
+        // Tekler - Ters sıra
+        &:nth-child(even) {
+            padding-right: 5.9375rem !important; //95px 
+        }
+        &:nth-child(odd) {
+            flex-direction: row-reverse !important;
+            padding-left: 5.9375rem !important; //95px 
+        }
+    }
+
+}

@@ -4,15 +4,29 @@
 @use "../components/navbar" as navbar;
 @use "../components/responsive" as responsive;
 
-
 .portfolio__card{
-@include mixins.portfolio-layout(
-    $card-direction: column, 
-    $card-gap: 2rem,
-    $content-direction: column, 
-    $content-gap: 1.5rem, 
-    $align: flex-start,
-    $content-margin-bottom: 4.5rem,
-    $border-column-color: vars.$color-text-field
-);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block-start: 2rem;
+    
+    &--picture {
+        width: 100%;
+    }
+    
+    &--image {
+        width: 100%;
+        display: block;
+    }
+    
+    &--content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border-block: 1px solid vars.$color-text-field;
+        padding-block: 1.5rem;
+        margin-block-end: 4.5rem;
+        align-self: center; // Tablet'te sadece kendi yüksekliği kadar
+    }
+   
 }
