@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./scss/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Manage Project</title>
 </head>
+
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <!--! header bolumu  -->
+  <nav class="navbar">
+    <img src="./images/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home.html">HOME</a></li>
+      <li class="p-2"><a href="portfolio.html">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+  </nav>
 
-  Manage
 
-  This project required me to build a fully responsive landing page to the designs 
-  provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-  required interactivity, such as the testimonial slider.
+  <section class="detail__hero">
+    <picture class="detail__hero-picture">
+      <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-manage-hero@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-manage-hero@2x.jpg">
+      <img class="detail__hero-image" src="images/detail/mobile/image-manage-hero@2x.jpg" alt="Manage project">
+    </picture>
 
-  Interaction Design / Front End Development
+    <div class="detail__hero-content">
+      <h1>Manage</h1>
+      <p class="detail__hero-description p-2">
+        This project required me to build a fully responsive landing page to the designs
+        provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
+        required interactivity, such as the testimonial slider.
+      </p>
+      <p class="detail__hero-category">Interaction Design / Front End Development</p>
+      <p class="detail__hero-tech">HTML / CSS / JS</p>
+      <a href="#" class="btn">VISIT WEBSITE</a>
+    </div>
+  </section>
 
-  HTML / CSS / JS
+<!-- Body Section -->
+  <section class="detail__body">
+    <!-- Project Background -->
+    <article class="detail__background">
+    <h3>Project Background</h3>
+    <p class="p-2">This project was a front-end challenge from Frontend Mentor. It’s a platform that
+      enables you to practice building websites to a design and project brief. Each challenge
+      includes mobile and desktop designs to show how the website should look at different
+      screen sizes. Creating these projects has helped me refine my workflow and solve
+      real-world coding problems. I’ve learned something new with each project, helping
+      me to improve and adapt my style.
+    </p>
+    </article>
 
-  Visit Website
+    <!-- Static Previews -->
+      <article class="detail__previews">
+        <h3>Static Previews</h3>
+        <picture>
+          <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-manage-preview-1@2x.jpg">
+          <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-manage-preview-1@2x.jpg">
+          <img class="detail__previews-image" src="images/detail/mobile/image-manage-preview-1@2x.jpg" alt="Preview 1">
+        </picture>
+        <picture>
+          <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-manage-preview-2@2x.jpg">
+          <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-manage-preview-2@2x.jpg">
+          <img class="detail__previews-image" src="images/detail/mobile/image-manage-preview-2@2x.jpg" alt="Preview 2">
+        </picture>
+      </article>
+  </section>
 
-  Project Background
+  
 
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
+
+
 
   Static Previews
 
@@ -48,4 +92,5 @@
   Contact Me
 
 </body>
+
 </html>

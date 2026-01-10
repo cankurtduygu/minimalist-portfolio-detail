@@ -374,4 +374,17 @@ footer {
   padding-block: 1.5rem;
   margin-block-end: 4.5rem;
   align-self: center;
+}
+
+.detail__hero {
+  background-color: red !important;
+  padding: 2rem !important;
+}
+
+.detail__hero-content {
+  background-color: yellow !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

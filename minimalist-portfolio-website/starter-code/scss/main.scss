@@ -16,13 +16,10 @@
 
 //pages
 
-@use "./pages/bookmark";
 @use "./pages/contact" as pages_contact;
-@use "./pages/fylo";
 @use "./pages/home";
-@use "./pages/insure";
-@use "./pages/manage";
 @use "./pages/portfolio";
+@use "pages/detail"; 
 
 // Load responsive utilities LAST so they can override page-level defaults
 @use "./components/responsive";

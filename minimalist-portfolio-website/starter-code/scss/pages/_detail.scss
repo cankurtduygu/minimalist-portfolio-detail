@@ -1,0 +1,15 @@
+@use "../abstract/variables" as vars;
+
+.detail__hero {
+    background-color: red !important;
+    padding: 2rem !important;
+}
+
+.detail__hero-content {
+    background-color: yellow !important;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding-block: 1.5rem;
+
+}
